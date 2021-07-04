@@ -250,14 +250,18 @@ img {
 
 }
 
+.reason-1-description img {
+  margin: 0 0 28px;
+}
+
 .reason-1-description h4 {
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
-  padding: 20px 0 25px;
   margin: 0;
+  padding: 0;
 }
 
 .reason-1-description p {
-
+  margin: 0;
 }
