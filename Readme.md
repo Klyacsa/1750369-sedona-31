@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Павел Волдаев](https://up.htmlacademy.ru/htmlcss/31/user/1750369).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Пудов](https://htmlacademy.ru/profile/kamelot43).
 
 ---
 
