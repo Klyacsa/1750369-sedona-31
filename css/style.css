@@ -353,5 +353,60 @@ img {
 
 .modal-open-button:active {
   background-color: var(--browm-extra);
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3 );
+}
+
+/*Modal*/
+
+.modal {
+  padding: 55px;
+  margin: 0 315px;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.modal-form label,
+.modal-form input::placeholder {
+  font-weight: 700;
+  color: var(--black-basic);
+  text-transform: uppercase;
+}
+
+.modal-form input {
+  background-color:#F2F2F2;
+  border: none;
+}
+
+.modal-form input:hover {
+  background-color:#EBEBEB;
+  border: none;
+}
+
+.modal-form input:focus {
+  background-color: var(--white-basic);
+  border: 2px solid #E5E5E5;
+}
+
+.modal-form p {
+  margin: 0 0 30px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-date {
+  padding: 10px 177px 10px 13px;
+}
+
+.form-number {
+  width: 37px;
+  text-align: center;
+}
+
+.form-date:focus {
+  padding: 8px 174px 8px 11px;
+}
+
+.button-number {
+
 }
