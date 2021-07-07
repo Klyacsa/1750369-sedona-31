@@ -522,4 +522,84 @@ img {
   margin-left: 56px;
 }
 
+/*Catalog-filter*/
 
+.filter {
+  background-image: url("../img/background-filter.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  color: var(--white-basic);
+  padding: 0;
+}
+
+.filter-form {
+  display: flex;
+  justify-content: space-between;
+  padding: 27px 73px 33px 72px;
+}
+
+.filter-form fieldset {
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.filter-checkbox ul {
+  list-style: none;
+  margin-top: 25px;
+}
+
+.filter-checkbox-options {
+  padding: 0;
+  margin: 0 0 25px;
+}
+
+.filter-checkbox label {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.filter-checkbox-options label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.input-checkbox + label::before { 
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -36px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.input-checkbox:checked + label::before { 
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -36px;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.input-checkbox:checked:disabled + label::before,
+.input-checkbox:disabled + label::before {
+  opacity: 0.2;
+}
+
+.catalog {
+  padding: 0 73px;
+}
+
+.search-results {
+  font-size: 21px;
+  font-weight: 700;
+}
