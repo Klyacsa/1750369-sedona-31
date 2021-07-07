@@ -159,11 +159,31 @@ img {
   margin: 3px;
 }
 
+.social-button:hover {
+  background-color: #669EC0;
+}
+
+.social-button:active {
+  background-color: #5496BD;
+}
+
+.social-button:active path{
+  opacity: 0.3;
+}
+
 .developer {
   margin: 0;
   padding: 43px 131px 41px 0;
   display: flex;
   align-items: center;
+}
+
+.developer-link:hover path {
+  fill: var(--blue-basic);
+}
+
+.developer-link:active path {
+  fill: #BDBBBC;
 }
 
 .developer p {
@@ -401,37 +421,91 @@ img {
 }
 
 .form-date {
-  padding: 10px 141px 10px 13px;
+  padding: 11px 138px 11px 13px;
   margin: 0 0 0 21px;
 }
 
 .form-date:focus {
-  padding: 8px 139px 8px 11px;
-}
-
-.button-calendar {
-  width: 36px;
-  height: 36px;
-  background-image: url("../img/calendar.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
+  padding: 9px 137px 9px 11px;
 }
 
 .form-number {
   width: 38px;
   height: 38px;
   text-align: center;
+  padding: 0;
+}
+
+.form-number:focus {
+  width: 34px;
+  height: 34px;
+}
+
+.button-calendar {
+  width: 38px;
+  height: 38px;
 }
 
 .button-minus {
   width: 38px;
   height: 38px;
-  text-align: center;
 }
 
 .button-plus {
   width: 38px;
   height: 38px;
+}
+
+.button-form {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color:#F2F2F2;
   text-align: center;
+}
+
+.button-form:hover path {
+  fill: var(--black-basic);
+}
+
+.button-form:active path {
+  fill: var(--blue-basic);
+}
+
+.button-form:hover rect {
+  fill: var(--black-basic);
+}
+
+.button-form:active rect {
+  fill: var(--blue-basic);
+}
+
+.button-search {
+  border: none;
+  font-weight: 700;
+  font-size: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white-basic);
+  padding: 16px 182px;
+  margin: 0;
+  background-color: var(--blue-basic);
+}
+
+.button-search:hover {
+  background-color: #669EC0;
+}
+
+.button-search:active {
+  background-color: #5496BD;
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.people-quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 458px;
 }
