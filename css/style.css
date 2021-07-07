@@ -197,24 +197,6 @@ img {
 
 /*Main-index*/
 
-.welcome-conteiner {
-  background-image: url("../img/background-photo.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.welcome-title {
-  margin: 77px 0 51px;
-}
-
-.welcome-description {
-  margin-bottom: 25px;
-}
-
 .description-conteiner {
   display: flex;
   flex-direction: column;
@@ -452,7 +434,7 @@ img {
 
 .button-minus {
   width: 38px;
-  height: 38px; 
+  height: 38px;
 }
 
 .button-plus {
@@ -566,7 +548,7 @@ img {
   user-select: none;
 }
 
-.input-checkbox + label::before { 
+.input-checkbox + label::before {
   content: "";
   position: absolute;
   top: -2px;
@@ -578,7 +560,7 @@ img {
   background-position: 0 0;
 }
 
-.input-checkbox:checked + label::before { 
+.input-checkbox:checked + label::before {
   content: "";
   position: absolute;
   top: -2px;
@@ -595,11 +577,97 @@ img {
   opacity: 0.2;
 }
 
-.catalog {
+.catalog-search {
   padding: 0 73px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sorting-box,
+.sorting-text,
+.sorting-text ul,
+.sorting-icon ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sorting-box ul {
+  list-style: none;
 }
 
 .search-results {
   font-size: 21px;
   font-weight: 700;
+}
+
+.sorting-text {
+  font-size: 12px;
+}
+
+.sorting-text a {
+  color: rgba(0, 0, 0, 0.3);
+  display: block;
+  padding: 0;
+  border-bottom: 1px dashed var(--blue-basic);
+}
+
+.sorting-text a:hover {
+  color: var(--blue-basic);
+}
+
+.sorting-text a:active {
+  color: var(--black-basic);
+  border: none;
+}
+
+.sorting-text .sorting-text-checked {
+  color: var(--blue-basic);
+  border: none;
+}
+
+.sorting-icon path {
+  opacity: 0.3;
+}
+
+.sorting-icon:hover path {
+  opacity: 1;
+}
+
+.sorting-icon:active path,
+.sorting-icon-checked path {
+  opacity: 1;
+  fill: var(--blue-basic);
+}
+
+/*Hostel-list*/
+
+.hostel-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hostel-list li {
+  padding: 30px 73px;
+  margin: 0;
+  border-top: 1px solid #E5E5E5;
+  display: flex;
+}
+
+.hostel-list li:last-child {
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.hostel-list img {
+  margin-right: 29px;
+}
+
+.hostel-description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hostel-description-raiting {
+  width: 127px;
 }
