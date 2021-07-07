@@ -503,9 +503,19 @@ img {
 
 .people-quantity {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0;
-  margin: 0;
+  margin: 0 0 54px;
   width: 458px;
 }
+
+.people-quantity label:first-child {
+  margin-right: 40px;
+}
+
+.people-quantity .form-label-children {
+  margin-right: 26px;
+  margin-left: 56px;
+}
+
+
