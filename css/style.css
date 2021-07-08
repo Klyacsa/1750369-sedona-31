@@ -207,7 +207,7 @@ img {
   font-weight: 700;
   line-height: 26px;
   text-align: center;
-  margin: 41px 0 46px;
+  margin: 33px 0 48px;
   padding: 0 365px;
 }
 
@@ -222,6 +222,11 @@ img {
   font-weight: 700;
   line-height: 21px;
   text-align: center;
+}
+
+.reasons {
+  margin: 0;
+  padding: 0;
 }
 
 .reason-1,
@@ -243,12 +248,12 @@ img {
 }
 
 .reason-2 h3 {
-  padding: 50px 120px 25px;
+  padding: 50px 120px 27px;
   margin: 0;
 }
 
 .reason-1 p {
-  padding: 23px 45px 54px;
+  padding: 25px 45px 54px;
   margin: 0;
 }
 
@@ -306,18 +311,33 @@ img {
 
 .reason-others li {
   text-align: center;
-  width: 400px;
 }
 
 .reason-others h3 {
-  margin: 0 140px 27px;
+  margin: 0 150px 25px;
   padding: 0;
   line-height: 21px;
 }
 
 .reason-others p {
-  padding: 0;
-  margin: 23px 0 0;
+  margin: 24px 0 0;
+  line-height: 21px;
+}
+
+.reason-3 h3 {
+  margin: 0 140px 25px;
+}
+
+.reason-3 p {
+  padding: 0 95px;
+}
+
+.reason-4 p {
+  padding: 0 67px;
+}
+
+.reason-5 p {
+  padding: 0 75px;
 }
 
 .search-hotel {
