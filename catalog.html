@@ -74,13 +74,27 @@
           </fieldset>
           <fieldset>
             <legend>Стоимость в сутки, &#8381;:</legend>
+            <div class="range-filter">
+              <div class="price-controls">
+                <input type="text" name="min-price" placeholder="от 0">
+                <input type="text" name="max-price" placeholder="до 3000">
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0"></div>
+                <div class="toggle toggle-max" tabindex="0"></div>
+              </div>
+            </div>
+            <button class="button-filter" type="submit">Показать</button>
           </fieldset>
         </form>
       </section>
       <section class="catalog-search">
         <p class="search-results">Найдено: 3</p>
         <p>Сортировка:</p>
-        <div class="sorting-box"> 
+        <div class="sorting-box">
           <ul class="sorting-text">
             <li>
               <a class="sorting-text-checked" href="#">По цене</a>
@@ -114,11 +128,12 @@
             <div class="hostel-description">
               <div>
                 <h3>
-                  <a class="hostel-name" href="#">Amara Resort & Spa</a> 
+                  <a class="hostel-name" href="#">Amara Resort & Spa</a>
                 </h3>
-                <p>Гостиница
+                <div class="prise">
+                  <p>Гостиница</p>
                   <span>От 4000 &#8381;</span>
-                </p>
+                </div>
                 <a class="details" href="#">Подробнее</a>
                 <a class="book" href="#">Забронировать</a>
               </div>
@@ -140,9 +155,10 @@
                 <h3>
                   <a class="hostel-name" href="#">Desert Quail Inn</a>
                 </h3>
-                <p>Мотель
+                <div class="prise">
+                  <p>Мотель</p>
                   <span>От 3000 &#8381;</span>
-                </p>
+                </div>
                 <a class="details" href="#">Подробнее</a>
                 <a class="book" href="#">Забронировать</a>
               </div>
@@ -163,9 +179,10 @@
                 <h3>
                   <a class="hostel-name" href="#">Villas at Poco Diablo</a>
                 </h3>
-                <p>Апартаменты
+                <div class="prise">
+                  <p>Апартаменты</p>
                   <span>От 2000 &#8381;</span>
-                </p>
+                </div>
                 <a class="details" href="#">Подробнее</a>
                 <a class="book" href="#">Забронировать</a>
               </div>
