@@ -3,5 +3,7 @@ const modalPopup = document.querySelector(".modal");
 
 modalLink.addEventListener("click", function (evt) {
   evt.preventDefault();
-  modalPopup.classList.add("modal-show");
+  modalPopup.classList.toggle("modal-show");
+  modalPopup.classList.toggle("modal");
 });
+
