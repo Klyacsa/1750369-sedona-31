@@ -9,6 +9,7 @@
   --brown-basic: #766357;
   --brown-medium: #604E43;
   --brown-extra: #503E33;
+  --body-background: #F2F2F2;
 }
 
 /* Global */
@@ -25,6 +26,8 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+  background-color: var(--body-background);
+  padding: 0 40px;
 }
 
 a {
@@ -56,7 +59,8 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0;
+  background-color: var(--white-basic);
 }
 
 /*Header*/
@@ -192,6 +196,10 @@ img {
   margin: 0 15px 5px 0;
 }
 
+.map {
+  position: relative;
+}
+
 .footer-index {
   position: absolute;
   top: 2642px;
@@ -229,6 +237,7 @@ img {
 .reasons {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .reason-1,
@@ -350,21 +359,23 @@ img {
 .search-hotel span {
   font-size: 30px;
   font-weight: 700;
-  margin: 58px 457px 36px 446px;
+  margin-top: 58px;
+  margin-bottom: 36px ;
+  text-align: center;
   display: block;
 }
 
 .search-hotel p {
   text-align: center;
   line-height: 24px;
-  padding: 0 382px;
+  padding: 0;
   margin: 0 0 45px;
 }
 
 .modal-open-button {
   display: block;
-  padding: 32px 125px;
   margin: 0 316px;
+  padding: 32px 125px;
   text-align: center;
   background-color: var(--brown-basic);
   color: var(--white-basic);
@@ -391,6 +402,7 @@ img {
   position: absolute;
   top: 2165px;
   display: none;
+  z-index: 3;
 }
 
 .modal-show {
@@ -661,10 +673,12 @@ img {
 
 .price-controls input {
   background: none;
-  width: 158px;
-  padding: 7px 0 9px;
+  width: 138px;
+  padding: 7px 10px 9px;
   margin: 0;
   border: none;
+  color: var(--white-basic);
+  text-align: center;
 }
 
 .price-controls:after {
@@ -698,6 +712,11 @@ img {
   align-items: center;
   text-transform: uppercase;
   color: var(--white-basic);
+}
+
+.button-filter:hover {
+  background-color: var(--white-basic);
+  color: var(--black-basic);
 }
 
 /*Catalog content*/
@@ -776,15 +795,15 @@ img {
   border: none;
 }
 
-.sorting-icon path {
+.sorting-icon-item path {
   opacity: 0.3;
 }
 
-.sorting-icon:hover path {
+.sorting-icon-item:hover path {
   opacity: 1;
 }
 
-.sorting-icon:active path,
+.sorting-icon-item:active path,
 .sorting-icon-checked path {
   opacity: 1;
   fill: var(--blue-basic);
