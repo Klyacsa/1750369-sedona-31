@@ -5,7 +5,7 @@
     <title>Гостиницы-Седона</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
   </head>
 
@@ -51,7 +51,7 @@
                   <label for="filter-parking">Парковка</label>
                 </li>
                 <li class="filter-checkbox-options">
-                  <input class="visually-hidden input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi" disabled>
+                  <input class="visually-hidden input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi">
                   <label for="filter-wi-fi">wi-fi</label>
                 </li>
               </ul>
@@ -68,7 +68,7 @@
                   <label for="filter-motel">Мотель</label>
                 </li>
                 <li class="filter-checkbox-options">
-                  <input class="visually-hidden input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked disabled>
+                  <input class="visually-hidden input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
                   <label for="filter-apartments">Апартаменты</label>
                 </li>
               </ul>
@@ -77,8 +77,14 @@
               <legend>Стоимость в сутки, &#8381;:</legend>
               <div class="range-filter">
                 <div class="price-controls">
-                  <input type="text" name="min-price" placeholder="от 0">
-                  <input type="text" name="max-price" placeholder="до 3000">
+                  <div>
+                    <label for="minimal-price">От</label>
+                    <input type="text" id="minimal-price" name="min-price" value="0">
+                  </div>
+                  <div>
+                    <label for="maximum-price">До</label>
+                    <input type="text" id="maximum-price" name="max-price" value="3000">
+                  </div>
                 </div>
                 <div class="range-controls">
                   <div class="scale">
@@ -143,6 +149,7 @@
                   <a class="book" href="#">Забронировать</a>
                 </div>
                 <div class="hostel-description-raiting">
+                  <h4 class="visually-hidden">Рейтинг отеля</h4> 
                   <div class="star-raiting">
                     <span class="star-raiting-icon"></span>
                     <span class="star-raiting-icon"></span>
@@ -154,7 +161,7 @@
               </div>
             </li>
             <li>
-              <img src="img/desert quail inn.jpg" width="135" height="90" alt="Отель ADesert Quail Inn">
+              <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Отель ADesert Quail Inn">
               <div class="hostel-description">
                 <div>
                   <h3>
@@ -168,6 +175,7 @@
                   <a class="book" href="#">Забронировать</a>
                 </div>
                 <div class="hostel-description-raiting">
+                  <h4 class="visually-hidden">Рейтинг отеля</h4> 
                   <div class="star-raiting">
                     <span class="star-raiting-icon"></span>
                     <span class="star-raiting-icon"></span>
@@ -192,6 +200,7 @@
                   <a class="book" href="#">Забронировать</a>
                 </div>
                 <div class="hostel-description-raiting">
+                  <h4 class="visually-hidden">Рейтинг отеля</h4> 
                   <div class="star-raiting">
                     <span class="star-raiting-icon"></span>
                     <span class="star-raiting-icon"></span>
